@@ -4,42 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Modern Normalizator domyślnych styli CSS przeglądarki -->
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <!-- Fonty -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Style CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Studio</title>
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <a href="./index.html" class="logo link"
-          ><span class="logo1">Web</span>Studio</a
-        >
-        <ul class="list">
-          <li>
-            <a href="./" class="link">Agencja</a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="link">Portfolio</a>
-          </li>
-          <li>
-            <a href="./" class="link">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <ul class="list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link contact"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+48111111111" class="link contact">+48 111 111 111</a>
-          </li>
-        </ul>
+    <header class="border">
+      <div class="header container">
+        <nav class="navigation">
+          <a href="./index.html" class="logo link"
+            ><span class="logo1">Web</span>Studio</a
+          >
+          <ul class="list">
+            <li>
+              <a href="./" class="link">Agencja</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link">Portfolio</a>
+            </li>
+            <li>
+              <a href="./" class="link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <ul class="list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="link contact"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+48111111111" class="link contact"
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -47,7 +58,7 @@
         <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button class="button1" type="button">Zamów usługe</button>
       </section>
-      <div>
+      <div class="container section">
         <h2 class="disappear">Nagłówek h2 do schowania w CSS</h2>
         <ul class="list">
           <li>
@@ -73,18 +84,19 @@
           </li>
           <li>
             <h3 class="heading2">LOREM IPSUM</h3>
-            <p class="paragraph">
+            <p class="paragraph last">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
       </div>
-      <section>
+      <section class="container section">
         <h2 class="second-header">Czym się zajmujemy</h2>
         <ul class="list">
           <li>
             <img
+              class="box"
               src="./images/box1.jpg"
               alt="zbliżenie na programistę pracującego przy biurku"
               width="370"
@@ -93,6 +105,7 @@
           </li>
           <li>
             <img
+              class="box"
               src="./images/box2.jpg"
               alt="programista pracujący nad projektem aplikacji mobilnej"
               width="370"
@@ -101,6 +114,7 @@
           </li>
           <li>
             <img
+              class="box"
               src="./images/box3.jpg"
               alt="grafik wybierający barwy z palety na tablecie"
               width="370"
@@ -109,10 +123,10 @@
           </li>
         </ul>
       </section>
-      <section class="section">
+      <section class="section team">
         <h2 class="second-header">Nasz zespół</h2>
         <ul class="list">
-          <li>
+          <li class="card">
             <img
               src="./images/img1.jpg"
               alt="John Doe, Product designer"
@@ -122,7 +136,7 @@
             <h3 class="name">John Doe</h3>
             <p class="role">Product Designer</p>
           </li>
-          <li>
+          <li class="card">
             <img
               src="./images/img2.jpg"
               alt="John Doe, Frontend Developer"
@@ -132,7 +146,7 @@
             <h3 class="name">John Doe</h3>
             <p class="role">Frontend Developer</p>
           </li>
-          <li>
+          <li class="card">
             <img
               src="./images/img3.jpg"
               alt="John Doe, Marketing"
@@ -142,7 +156,7 @@
             <h3 class="name">John Doe</h3>
             <p class="role">Marketing</p>
           </li>
-          <li>
+          <li class="card">
             <img
               src="./images/img4.jpg"
               alt="John Doe, UI Designer"
@@ -161,7 +175,7 @@
       >
       <address>
         <p class="address">m. Warszawa, Aleje Jerozolimskie 21</p>
-        <ul class="list">
+        <ul class="list foot">
           <li>
             <a href="mailto:info@devstudio.com" class="link contact"
               >info@devstudio.com</a

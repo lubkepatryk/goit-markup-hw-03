@@ -4,58 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Modern Normalizator domyślnych styli CSS przeglądarki -->
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <!-- Fonty -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Style CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <a href="./index.html" class="logo link"
-          ><span class="logo1">Web</span>Studio</a
-        >
-        <ul class="list">
-          <li>
-            <a href="./" class="link">Agencja</a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="link">Portfolio</a>
-          </li>
-          <li>
-            <a href="./" class="link">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <ul class="list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link contact"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+48111111111" class="link contact">+48 111 111 111</a>
-          </li>
-        </ul>
+    <header class="border">
+      <div class="header container">
+        <nav class="navigation">
+          <a href="./index.html" class="logo link"
+            ><span class="logo1">Web</span>Studio</a
+          >
+          <ul class="list">
+            <li>
+              <a href="./" class="link">Agencja</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link">Portfolio</a>
+            </li>
+            <li>
+              <a href="./" class="link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <ul class="list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="link contact"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+48111111111" class="link contact"
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
-    <main>
+    <main class="container section section2">
       <div>
         <h1 class="disappear">Nagłówek h1 do schowania w CSS</h1>
-        <ul class="list">
+        <ul class="list buttons">
           <li><button class="button" type="button">Wszystkie</button></li>
           <li><button class="button" type="button">Strony</button></li>
           <li><button class="button" type="button">Aplikacje</button></li>
           <li><button class="button" type="button">Dizajn</button></li>
-          <li><button class="button" type="button">Marketing</button></li>
+          <li><button class="button last" type="button">Marketing</button></li>
         </ul>
       </div>
       <section>
         <h2 class="disappear">Nagłówek h2 do schowania w CSS</h2>
-        <ul class="list">
+        <ul class="list card-set">
           <li>
             <img
               src="./images/technocrack(squoosh).jpg"
@@ -63,8 +74,10 @@
               width="370"
               height="294"
             />
-            <h3 class="heading">Technocrack</h3>
-            <p class="filtr">Strona internetowa</p>
+            <div class="heading-filtr">
+              <h3 class="heading">Technocrack</h3>
+              <p class="filtr">Strona internetowa</p>
+            </div>
           </li>
           <li>
             <img
@@ -73,8 +86,10 @@
               width="370"
               height="294"
             />
-            <h3 class="heading">Grafika New Orlean vs Golden Star</h3>
-            <p class="filtr">Dizajn</p>
+            <div class="heading-filtr">
+              <h3 class="heading">Grafika New Orlean vs Golden Star</h3>
+              <p class="filtr">Dizajn</p>
+            </div>
           </li>
           <li>
             <img
@@ -83,8 +98,10 @@
               width="370"
               height="294"
             />
-            <h3 class="heading">Restauracja Seafood</h3>
-            <p class="filtr">Aplikacja</p>
+            <div class="heading-filtr">
+              <h3 class="heading">Restauracja Seafood</h3>
+              <p class="filtr">Aplikacja</p>
+            </div>
           </li>
           <li>
             <img
@@ -93,8 +110,10 @@
               width="370"
               height="294"
             />
-            <h3 class="heading">Projekt Prime</h3>
-            <p class="filtr">Marketing</p>
+            <div class="heading-filtr">
+              <h3 class="heading">Projekt Prime</h3>
+              <p class="filtr">Marketing</p>
+            </div>
           </li>
           <li>
             <img
@@ -103,8 +122,10 @@
               width="370"
               height="294"
             />
-            <h3 class="heading">Projekt Boxes</h3>
-            <p class="filtr">Aplikacja</p>
+            <div class="heading-filtr">
+              <h3 class="heading">Projekt Boxes</h3>
+              <p class="filtr">Aplikacja</p>
+            </div>
           </li>
           <li>
             <img
@@ -113,8 +134,10 @@
               width="370"
               height="294"
             />
-            <h3 class="heading">Inspiration has no Borders</h3>
-            <p class="filtr">Strona internetowa</p>
+            <div class="heading-filtr">
+              <h3 class="heading">Inspiration has no Borders</h3>
+              <p class="filtr">Strona internetowa</p>
+            </div>
           </li>
           <li>
             <img
@@ -123,8 +146,10 @@
               width="370"
               height="294"
             />
-            <h3 class="heading">Magazyn Limited Edition</h3>
-            <p class="filtr">Dizajn</p>
+            <div class="heading-filtr">
+              <h3 class="heading">Magazyn Limited Edition</h3>
+              <p class="filtr">Dizajn</p>
+            </div>
           </li>
           <li>
             <img
@@ -133,8 +158,10 @@
               width="370"
               height="294"
             />
-            <h3 class="heading">Projekt LAB</h3>
-            <p class="filtr">Marketing</p>
+            <div class="heading-filtr">
+              <h3 class="heading">Projekt LAB</h3>
+              <p class="filtr">Marketing</p>
+            </div>
           </li>
           <li>
             <img
@@ -143,8 +170,10 @@
               width="370"
               height="294"
             />
-            <h3 class="heading">Growing Business</h3>
-            <p class="filtr">Aplikacja</p>
+            <div class="heading-filtr">
+              <h3 class="heading">Growing Business</h3>
+              <p class="filtr">Aplikacja</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -155,7 +184,7 @@
       >
       <address>
         <p class="address">m. Warszawa, Aleje Jerozolimskie 21</p>
-        <ul class="list">
+        <ul class="list foot">
           <li>
             <a href="mailto:info@devstudio.com" class="link contact"
               >info@devstudio.com</a
