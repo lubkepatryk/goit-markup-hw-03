@@ -1,3 +1,10 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --brand-color: #2196f3;
   --background-color: #2f303a;
@@ -8,12 +15,12 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--main-font-color);
-  max-width: 1600px;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .disappear {
@@ -34,7 +41,6 @@ body {
   height: 38px;
   width: 121px;
   font-family: inherit;
-  padding-right: 8px;
   padding-left: 0;
 }
 
@@ -54,8 +60,7 @@ body {
   font-family: "Roboto", "Railway", sans-serif;
   line-height: 1.87;
   text-align: center;
-  height: 50px;
-  width: 200px;
+  padding: 10px 41px 10px 42px;
   color: #ffffff;
   margin-bottom: 200px;
 }
@@ -108,20 +113,18 @@ body {
   font-weight: 500;
   line-height: 1.14;
   padding: 0;
+  gap: 30px;
 }
 
 .list .link {
   display: block;
-  padding: 0 46px 0 0;
+  /* padding: 0 46px 0 0; */
 }
 
 .list.buttons {
   padding: 22px;
   margin-bottom: 34px;
-}
-
-.navigation {
-  margin-right: 325px;
+  gap: 8px;
 }
 
 .list .link.contact {
@@ -135,6 +138,7 @@ body {
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation,
@@ -159,13 +163,12 @@ body {
 .heading2 {
   font-size: 14px;
   line-height: 1.14;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .paragraph {
   font-size: 14px;
   line-height: 1.7;
-  padding-right: 30px;
   color: var(--secondary-font-color);
 }
 
@@ -196,7 +199,8 @@ ul {
   letter-spacing: 0.06em;
   color: #ffffff;
   padding-top: 200px;
-  margin: 0 452px 30px;
+  margin-bottom: 30px;
+  max-width: 696px;
 }
 
 .second-header {
@@ -208,13 +212,7 @@ ul {
   margin-bottom: 50px;
 }
 
-.box {
-  padding-right: 30px;
-  padding-bottom: 94px;
-}
-
 .card {
-  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -222,9 +220,6 @@ ul {
 
 .section {
   padding-top: 94px;
-}
-
-.section2 {
   padding-bottom: 94px;
 }
 
@@ -240,7 +235,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-font-color);
-  padding: 30px 0 10px;
+  margin: 30px 0 10px;
 }
 
 .role {
@@ -249,12 +244,18 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .card-set {
+  display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  padding: 0;
+}
+
+.item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .heading-filtr {
